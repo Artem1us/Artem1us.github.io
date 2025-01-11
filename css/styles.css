@@ -1,3 +1,4 @@
+/* Общие стили */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -5,12 +6,22 @@ body {
     color: #fff;
 }
 
+h1, h2, h3 {
+    font-family: 'Arial Black', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Хедер */
 .main-header {
     background: #1a1a1a;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 
 .logo h1 {
@@ -25,7 +36,6 @@ body {
 }
 
 .nav-links a {
-    text-decoration: none;
     color: #fff;
     transition: color 0.3s ease;
 }
@@ -34,10 +44,11 @@ body {
     color: #00ffcc;
 }
 
+/* Главный блок с приветствием */
 .hero {
     text-align: center;
-    padding: 100px 20px;
-    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    padding: 60px 20px;
+    background-color: #1a1a1a;
 }
 
 .hero-text h2 {
@@ -47,81 +58,44 @@ body {
 
 .hero-text p {
     font-size: 18px;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
-.btn-primary {
-    background-color: #00ffcc;
-    color: #121212;
-    padding: 5px 15px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #008a66;
-}
-
-.main-footer {
-    background: #1a1a1a;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.btn-group {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.btn-primary {
-    background-color: #00ffcc;
-    color: #121212;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-}
-
-.btn-primary:hover {
-    background-color: #008a66;
-}
-
-/* Общий стиль для контейнера роты */
+/* Контейнер роты */
 .clans-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 40px;
-    margin-top: 40px;
-    flex-wrap: wrap; /* Для адаптивности */
+    margin: 40px auto;
+    padding: 0 20px;
+    max-width: 1200px;
 }
 
+/* Каждый блок роты */
 .clan-block {
     text-align: center;
+    flex: 1;
     max-width: 300px;
 }
 
-/* Стили для изображений роты */
+/* Картинка роты */
 .clan-image {
-    width: 100%; /* Картинка растягивается по ширине блока */
+    width: 100%;
     height: auto;
-    border-radius: 10px; /* Немного скруглим края */
+    border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .clan-image:hover {
-    transform: scale(1.05); /* Лёгкое увеличение при наведении */
-    box-shadow: 0 8px 20px rgba(0, 255, 204, 0.5); /* Тень */
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 255, 204, 0.5);
 }
 
+/* Название роты */
 .clan-block h3 {
-    margin: 10px 0;
+    margin: 15px 0;
     font-size: 20px;
     color: #00ffcc;
 }
@@ -141,4 +115,12 @@ body {
 
 .btn-primary:hover {
     background-color: #008a66;
+}
+
+/* Футер */
+.main-footer {
+    background: #1a1a1a;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
 }
