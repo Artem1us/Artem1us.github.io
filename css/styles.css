@@ -4,6 +4,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1, h2, h3 {
@@ -22,6 +25,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
+    width: 100%;
 }
 
 .logo h1 {
@@ -47,8 +51,9 @@ a {
 /* Главный блок с приветствием */
 .hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px 20px;
     background-color: #1a1a1a;
+    width: 100%;
 }
 
 .hero-text h2 {
@@ -64,19 +69,18 @@ a {
 /* Контейнер роты */
 .clans-container {
     display: flex;
-    justify-content: center; /* Центрируем блоки */
-    align-items: flex-start;
-    gap: 20px; /* Сокращаем расстояние между блоками */
-    margin: 40px auto;
-    padding: 0 20px;
-    max-width: 800px; /* Ограничиваем ширину контейнера */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    gap: 10px; /* Сокращаем расстояние между блоками */
+    margin: 20px auto;
+    width: fit-content; /* Контейнер занимает минимальное пространство */
 }
 
 /* Каждый блок роты */
 .clan-block {
     text-align: center;
     flex: 1;
-    max-width: 300px;
+    max-width: 200px; /* Уменьшаем ширину блока */
 }
 
 /* Картинка роты */
@@ -95,7 +99,7 @@ a {
 
 /* Название роты */
 .clan-block h3 {
-    margin: 15px 0;
+    margin: 10px 0;
     font-size: 20px;
     color: #00ffcc;
 }
@@ -105,12 +109,13 @@ a {
     margin-top: 10px;
     background-color: #00ffcc;
     color: #121212;
-    padding: 10px 15px;
+    padding: 8px 12px; /* Сокращаем размер кнопки */
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     display: inline-block;
+    font-size: 14px; /* Уменьшаем шрифт кнопки */
 }
 
 .btn-primary:hover {
@@ -123,4 +128,5 @@ a {
     text-align: center;
     padding: 15px 0;
     margin-top: 40px;
+    width: 100%;
 }
