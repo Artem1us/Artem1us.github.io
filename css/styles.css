@@ -91,3 +91,54 @@ body {
 .btn-primary:hover {
     background-color: #008a66;
 }
+
+/* Общий стиль для контейнера роты */
+.clans-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Для адаптивности */
+}
+
+.clan-block {
+    text-align: center;
+    max-width: 300px;
+}
+
+/* Стили для изображений роты */
+.clan-image {
+    width: 100%; /* Картинка растягивается по ширине блока */
+    height: auto;
+    border-radius: 10px; /* Немного скруглим края */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.clan-image:hover {
+    transform: scale(1.05); /* Лёгкое увеличение при наведении */
+    box-shadow: 0 8px 20px rgba(0, 255, 204, 0.5); /* Тень */
+}
+
+.clan-block h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #00ffcc;
+}
+
+/* Кнопки */
+.btn-primary {
+    margin-top: 10px;
+    background-color: #00ffcc;
+    color: #121212;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #008a66;
+}
