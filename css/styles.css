@@ -24,8 +24,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 15px 20px; /* Отступ сверху и снизу, а также по бокам */
     width: 100%;
+    max-width: 1200px; /* Ограничение ширины */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    box-sizing: border-box; /* Учитываем отступы */
 }
 
 .logo h1 {
@@ -73,7 +76,10 @@ a {
     align-items: center;
     gap: 40px; /* Расстояние между блоками */
     margin: 40px auto;
-    position: relative; /* Для дальнейшего смещения */
+    position: relative;
+    max-width: 1000px; /* Ограничиваем ширину контейнера рот */
+    padding: 0 20px; /* Отступы слева и справа */
+    box-sizing: border-box; /* Учитываем отступы в ширину */
 }
 
 /* Каждый блок роты */
@@ -84,11 +90,11 @@ a {
 
 /* Сдвиги блоков */
 .clan-block.left {
-    transform: translateX(-20px); /* Чуть левее */
+    transform: translateX(-10px); /* Чуть левее */
 }
 
 .clan-block.right {
-    transform: translateX(20px); /* Чуть правее */
+    transform: translateX(10px); /* Чуть правее */
 }
 
 /* Картинка роты */
@@ -137,4 +143,7 @@ a {
     padding: 15px 0;
     margin-top: 40px;
     width: 100%;
+    max-width: 1200px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Центрируем */
+    box-sizing: border-box;
 }
