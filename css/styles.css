@@ -22,7 +22,7 @@ body {
 }
 
 /* Логотип */
-.logo-link {
+.logo a {
     font-size: 24px; /* Размер шрифта логотипа */
     font-weight: bold; /* Жирный текст */
     color: #00ffcc; /* Цвет текста */
@@ -30,7 +30,7 @@ body {
     transition: color 0.3s ease; /* Эффект изменения цвета */
 }
 
-.logo-link:hover {
+.logo a:hover {
     color: #008a66; /* Меняем цвет при наведении */
 }
 
