@@ -204,7 +204,7 @@ body {
 }
 
 /* Основной стиль кнопки */
-.btn-primary {
+.mods-btn-primary {
     background-color: #00ffcc; /* Фон кнопки */
     color: #121212; /* Цвет текста */
     padding: 10px 20px; /* Внутренние отступы */
@@ -218,7 +218,7 @@ body {
     transition: background-color 0.3s ease, transform 0.2s ease; /* Эффекты */
 }
 
-.btn-primary:hover {
+.mods-btn-primary:hover {
     background-color: #008a66; /* Цвет при наведении */
     color: #ffffff; /* Белый текст */
     transform: scale(1.05); /* Лёгкое увеличение */
