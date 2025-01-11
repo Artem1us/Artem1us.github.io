@@ -4,6 +4,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1, h2, h3 {
@@ -66,26 +69,25 @@ a {
 /* Контейнер роты */
 .clans-container {
     display: flex;
-    justify-content: center; /* Центрируем весь контейнер */
-    align-items: center; /* Центрируем по вертикали */
-    gap: 40px; /* Расстояние между ротами */
+    justify-content: center;
+    align-items: center;
+    gap: 60px; /* Расстояние между блоками */
     margin: 40px auto;
-    max-width: 800px;
+    position: relative; /* Для дальнейшего смещения */
 }
 
 /* Каждый блок роты */
 .clan-block {
     text-align: center;
-    flex: 0 0 250px; /* Фиксированная ширина для блоков */
-    position: relative;
+    flex: 0 0 250px; /* Фиксированная ширина */
 }
 
-/* Сдвиги роты */
-.clan-block:nth-child(1) {
+/* Сдвиги блоков */
+.clan-block.left {
     transform: translateX(-20px); /* Чуть левее */
 }
 
-.clan-block:nth-child(2) {
+.clan-block.right {
     transform: translateX(20px); /* Чуть правее */
 }
 
