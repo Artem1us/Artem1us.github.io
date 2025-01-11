@@ -207,7 +207,7 @@ body {
 .btn-primary {
     margin-top: 10px;
     background-color: #00ffcc; /* Основной яркий цвет сайта */
-    color: #121212; /* Тёмный текст для контраста */
+    color: #121212; /* Темный текст для контраста */
     padding: 10px 15px; /* Размер кнопки */
     text-decoration: none; /* Убираем подчеркивание */
     font-weight: bold; /* Жирный текст */
@@ -217,6 +217,12 @@ body {
     text-align: center; /* Центрируем текст */
 }
 
+/* Темноватый текст для кнопки */
+.btn-primary.dark-text {
+    color: #0d0d0d; /* Более темный текст, как на главной */
+}
+
+/* Эффекты при наведении */
 .btn-primary:hover {
     background-color: #008a66; /* Тёмный цвет при наведении */
     transform: scale(1.05); /* Увеличение кнопки при наведении */
