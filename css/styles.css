@@ -205,21 +205,23 @@ body {
 
 /* Основной стиль кнопки */
 .mods-btn-primary {
-    background-color: #00ffcc; /* Цвет фона кнопки */
+    background-color: #00ffcc; /* Фон кнопки */
     color: #121212; /* Цвет текста */
-    padding: 10px 20px; /* Просторные отступы */
+    padding: 10px 20px; /* Внутренние отступы */
     font-size: 16px; /* Размер текста */
-    font-weight: bold; /* Жирный текст */
+    font-weight: bold; /* Жирный шрифт */
+    border: none; /* Убираем обводку */
+    border-radius: 5px; /* Закруглённые края */
     text-decoration: none; /* Убираем подчеркивание */
-    border-radius: 5px; /* Закругленные края кнопки */
-    display: inline-block; /* Блочная кнопка */
-    text-align: center; /* Центрируем текст внутри */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Добавляем плавный эффект */
+    display: inline-block; /* Делаем кнопку блочным элементом */
+    text-align: center; /* Центрируем текст */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Эффекты */
 }
 
 .mods-btn-primary:hover {
-    background-color: #008a66; /* Цвет фона при наведении */
-    color: #ffffff; /* Цвет текста при наведении */
+    background-color: #008a66; /* Цвет при наведении */
+    color: #ffffff; /* Белый текст */
+    transform: scale(1.05); /* Лёгкое увеличение */
 }
 
 
