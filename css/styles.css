@@ -128,3 +128,36 @@ body {
     padding: 15px 0;
     margin-top: 40px;
 }
+
+/* Стили для секции "О клане" */
+.about-section {
+    max-width: 800px; /* Ограничиваем ширину текста */
+    margin: 40px auto; /* Центрируем секцию */
+    padding: 20px;
+    color: #fff;
+    text-align: justify; /* Выравниваем текст */
+    line-height: 1.6; /* Увеличиваем межстрочный интервал */
+}
+
+.about-section h1 {
+    font-size: 32px;
+    color: #00ffcc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 24px;
+    color: #00ffcc;
+    margin-top: 20px;
+}
+
+.about-section ul {
+    margin: 20px 0;
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
