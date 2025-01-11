@@ -22,24 +22,30 @@ a {
 .main-header {
     background: #1a1a1a;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Центрируем содержимое хедера */
     align-items: center;
-    padding: 15px 20px; /* Отступ сверху и снизу, а также по бокам */
+    padding: 15px 20px; /* Отступ сверху и снизу */
     width: 100%;
-    max-width: 1200px; /* Ограничение ширины */
-    margin: 0 auto; /* Центрирование по горизонтали */
     box-sizing: border-box; /* Учитываем отступы */
+    gap: 30px; /* Расстояние между логотипом и ссылками */
+}
+
+.logo {
+    flex: 0; /* Логотип не растягивается */
 }
 
 .logo h1 {
     font-size: 24px;
     color: #00ffcc;
+    margin: 0; /* Убираем лишние отступы */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 15px; /* Расстояние между ссылками */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем отступы */
 }
 
 .nav-links a {
