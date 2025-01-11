@@ -93,7 +93,7 @@ a {
 
 /* Картинка роты */
 .clan-image {
-    width: 80%; /* Уменьшили ширину до 80% от блока */
+    width: 70%; /* Уменьшили ширину до 80% от блока */
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
