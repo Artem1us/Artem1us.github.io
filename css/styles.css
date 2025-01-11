@@ -71,7 +71,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px; /* Расстояние между блоками */
+    gap: 40px; /* Расстояние между блоками */
     margin: 40px auto;
     position: relative; /* Для дальнейшего смещения */
 }
@@ -79,7 +79,7 @@ a {
 /* Каждый блок роты */
 .clan-block {
     text-align: center;
-    flex: 0 0 250px; /* Фиксированная ширина */
+    flex: 0 0 200px; /* Фиксированная ширина блока */
 }
 
 /* Сдвиги блоков */
@@ -93,7 +93,7 @@ a {
 
 /* Картинка роты */
 .clan-image {
-    width: 80%;
+    width: 80%; /* Уменьшили ширину до 80% от блока */
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
