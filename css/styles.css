@@ -205,25 +205,19 @@ body {
 
 /* Кнопка "Скачать мод" */
 .btn-primary {
-    margin-top: 10px;
-    background-color: #00ffcc; /* Основной яркий цвет сайта */
-    color: #121212; /* Темный текст для контраста */
-    padding: 10px 15px; /* Размер кнопки */
+    background-color: #00ffcc; /* Основной цвет сайта */
+    color: #121212; /* Контрастный текст */
+    padding: 10px 20px; /* Просторные отступы */
+    font-size: 16px; /* Умеренно крупный текст */
+    font-weight: bold; /* Жирный текст для акцента */
     text-decoration: none; /* Убираем подчеркивание */
-    font-weight: bold; /* Жирный текст */
-    border-radius: 5px; /* Закругленные углы */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Эффекты при наведении */
-    display: inline-block; /* Чтобы кнопка вела себя как ссылка */
-    text-align: center; /* Центрируем текст */
+    border-radius: 5px; /* Закругленные края кнопки */
+    display: inline-block; /* Делаем кнопку блочным элементом */
+    text-align: center; /* Центрируем текст внутри кнопки */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Эффекты */
 }
 
-/* Темноватый текст для кнопки */
-.btn-primary.dark-text {
-    color: #0d0d0d; /* Более темный текст, как на главной */
-}
-
-/* Эффекты при наведении */
 .btn-primary:hover {
-    background-color: #008a66; /* Тёмный цвет при наведении */
+    background-color: #008a66; /* Цвет при наведении */
     transform: scale(1.05); /* Увеличение кнопки при наведении */
 }
