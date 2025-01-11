@@ -22,14 +22,15 @@ body {
 }
 
 /* Логотип */
-.logo a {
-    font-size: 24px;
-    color: #00ffcc;
+.logo-link {
+    font-size: 24px; /* Размер шрифта логотипа */
+    font-weight: bold; /* Жирный текст */
+    color: #00ffcc; /* Цвет текста */
     text-decoration: none; /* Убираем подчеркивание */
-    font-weight: bold;
+    transition: color 0.3s ease; /* Эффект изменения цвета */
 }
 
-.logo a:hover {
+.logo-link:hover {
     color: #008a66; /* Меняем цвет при наведении */
 }
 
