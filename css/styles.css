@@ -22,10 +22,15 @@ body {
 }
 
 /* Логотип */
-.logo h1 {
+.logo a {
     font-size: 24px;
     color: #00ffcc;
-    margin: 0; /* Убираем лишние отступы */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold;
+}
+
+.logo a:hover {
+    color: #008a66; /* Меняем цвет при наведении */
 }
 
 /* Навигация */
