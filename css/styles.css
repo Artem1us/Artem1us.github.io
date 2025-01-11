@@ -4,52 +4,43 @@ body {
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h1, h2, h3 {
-    font-family: 'Arial Black', sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 /* Хедер */
 .main-header {
     background: #1a1a1a;
+    padding: 15px 0; /* Отступ сверху и снизу */
     display: flex;
     justify-content: center; /* Центрируем содержимое хедера */
-    align-items: center;
-    padding: 15px 20px; /* Отступ сверху и снизу */
-    width: 100%;
-    box-sizing: border-box; /* Учитываем отступы */
-    gap: 30px; /* Расстояние между логотипом и ссылками */
 }
 
-.logo {
-    flex: 0; /* Логотип не растягивается */
+.header-container {
+    width: 800px; /* Устанавливаем фиксированную ширину для содержимого */
+    display: flex;
+    justify-content: space-between; /* Расстояние между логотипом и ссылками */
+    align-items: center; /* Выравнивание по вертикали */
 }
 
+/* Логотип */
 .logo h1 {
     font-size: 24px;
     color: #00ffcc;
     margin: 0; /* Убираем лишние отступы */
 }
 
+/* Навигация */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px; /* Расстояние между ссылками */
+    gap: 20px; /* Расстояние между ссылками */
     margin: 0; /* Убираем отступы */
     padding: 0; /* Убираем отступы */
 }
 
 .nav-links a {
     color: #fff;
+    font-size: 16px;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
@@ -82,10 +73,8 @@ a {
     align-items: center;
     gap: 40px; /* Расстояние между блоками */
     margin: 40px auto;
-    position: relative;
     max-width: 1000px; /* Ограничиваем ширину контейнера рот */
     padding: 0 20px; /* Отступы слева и справа */
-    box-sizing: border-box; /* Учитываем отступы в ширину */
 }
 
 /* Каждый блок роты */
@@ -94,18 +83,9 @@ a {
     flex: 0 0 200px; /* Фиксированная ширина блока */
 }
 
-/* Сдвиги блоков */
-.clan-block.left {
-    transform: translateX(-10px); /* Чуть левее */
-}
-
-.clan-block.right {
-    transform: translateX(10px); /* Чуть правее */
-}
-
 /* Картинка роты */
 .clan-image {
-    width: 70%; /* Уменьшили ширину до 80% от блока */
+    width: 70%; /* Уменьшили ширину до 70% от блока */
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -115,13 +95,6 @@ a {
 .clan-image:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 255, 204, 0.5);
-}
-
-/* Название роты */
-.clan-block h3 {
-    margin: 10px 0;
-    font-size: 20px;
-    color: #00ffcc;
 }
 
 /* Кнопки */
@@ -148,8 +121,4 @@ a {
     text-align: center;
     padding: 15px 0;
     margin-top: 40px;
-    width: 100%;
-    max-width: 1200px; /* Ограничиваем ширину */
-    margin: 0 auto; /* Центрируем */
-    box-sizing: border-box;
 }
