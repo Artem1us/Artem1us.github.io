@@ -202,3 +202,24 @@ body {
 .mods-section a:hover {
     color: #008a66;
 }
+
+/* Кнопка "Скачать мод" */
+.btn-download {
+    display: inline-block;
+    background-color: #ff5733; /* Ярко-оранжевый цвет кнопки */
+    color: #fff; /* Белый текст */
+    font-size: 18px; /* Увеличенный размер текста */
+    font-weight: bold; /* Жирный текст */
+    padding: 12px 20px; /* Пространство внутри кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 8px; /* Закругленные края */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Эффекты при наведении */
+    box-shadow: 0 4px 10px rgba(255, 87, 51, 0.5); /* Тень для кнопки */
+    text-align: center; /* Центрируем текст внутри кнопки */
+}
+
+.btn-download:hover {
+    background-color: #c13c23; /* Более тёмный цвет при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+    box-shadow: 0 6px 14px rgba(255, 87, 51, 0.8); /* Усиленная тень */
+}
